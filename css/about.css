@@ -9,12 +9,19 @@
   font-style: normal;
 }
 
+:root {
+  --main-bg-color: #fefdf8;
+  --header-footer-color: #f9c4bc;
+  --accent-color-orange: #ec8366;
+  --accent-color-green: #54b9b5;
+}
+
 body {
   background-color: #fefdf8;
 }
 
 .prinav {
-  background-color: #f9c4bc;
+  background-color: var(--header-footer-color);
 }
 
 #mklogo {
@@ -26,7 +33,7 @@ body {
 }
 
 #currentpage {
-  border-bottom: 2px solid #54b9b5;
+  border-bottom: 2px solid var(--accent-color-green);
 }
 
 .prinav {
@@ -75,7 +82,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 3em;
-  border-bottom: 2px dashed #f9c4bc;
+  border-bottom: 2px dashed var(--header-footer-color);
   display: inline-block;
 }
 
@@ -93,7 +100,7 @@ em {
 footer {
   padding: 20px;
   text-align: center;
-  background-color: #f9c4bc;
+  background-color: var(--header-footer-color);
 }
 
 footer p {

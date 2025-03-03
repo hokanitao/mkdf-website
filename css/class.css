@@ -6,15 +6,22 @@
   list-style: none;
 }
 
+:root {
+  --main-bg-color: #fefdf8;
+  --header-footer-color: #f9c4bc;
+  --accent-color-orange: #ec8366;
+  --accent-color-green: #54b9b5;
+}
+
 body {
-  background-color: #fefdf8;
+  background-color: var(--main-bg-color);
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .prinav {
-  background-color: #f9c4bc;
+  background-color: var(--header-footer-color);
 }
 
 #mklogo {
@@ -26,7 +33,7 @@ body {
 }
 
 #currentpage {
-  border-bottom: 2px solid #54b9b5;
+  border-bottom: 2px solid var(--accent-color-green);
 }
 
 .prinav {
@@ -71,7 +78,7 @@ body {
 }
 
 h1 {
-  border-bottom: 2px dashed #f9c4bc;
+  border-bottom: 2px dashed var(--header-footer-color);
   display: inline-block;
   font-family: "Ribeye Marrow", serif;
   font-weight: 400;
@@ -101,24 +108,24 @@ table td,
 table th {
   text-align: center;
   padding: 15px 20px;
-  color: #fefdf8;
+  color: var(--main-bg-color);
 }
 
 table tbody tr:nth-child(even) {
   color: #ffffff;
-  background-color: #ec8366;
+  background-color: var(--accent-color-orange);
 }
 
 table tbody tr:nth-child(odd) {
   color: #ffffff;
-  background-color: #54b9b5;
+  background-color: var(--accent-color-green);
 }
 
 footer {
   padding: 20px;
   margin-top: 5%;
   text-align: center;
-  background-color: #f9c4bc;
+  background-color: var(--header-footer-color);
   clear: both;
 }
 
