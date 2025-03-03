@@ -13,6 +13,7 @@ body {
   background-color: #fefdf8;
 }
 
+/* header */
 .prinav {
   background-color: #f9c4bc;
 }
@@ -64,6 +65,7 @@ body {
   width: calc(100% - 100px - 480px);
 }
 
+/* main */
 main {
   margin: 0 5%;
   text-align: center;
@@ -116,6 +118,23 @@ h2 {
   align-self: auto;
 }
 
+/* back to top button */
+.backtotop {
+  position: fixed;
+  bottom: 70px; /* footer height */
+  left: 25px;
+}
+
+.backtotop img {
+  width: 4rem;
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    width: 3rem;
+  }
+}
+
+
+/* footer */
 footer {
   padding: 20px;
   margin-top: 5%;
