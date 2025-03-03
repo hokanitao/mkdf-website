@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prinav {
+  background-color: #f9c4bc;
+}
+
+#mklogo {
+  vertical-align: middle;
+  margin: 5px;
+  margin-left: 10px;
+  width: 70px;
+  border: 1px solid black;
+}
+
+#currentpage {
+  border-bottom: 2px solid #54b9b5;
+}
+
+.prinav {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.navcontent{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.prinav div div {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+
+.prinav div div img {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.prinav div div:hover {
+  opacity: 0.7;
+}
+
+.navspacer {
+  display: inline-block;
+  /* Parent width - Logo width - Menu <div> width */
+  width: calc(100% - 100px - 480px);
+}
+
+.headphoto {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.headphoto img {
+  width: 100%;
+  opacity: 0.3; /* 画像の透明度を調整 */
+}
+
+.header {
+  position: absolute;
+  top: 50%; /* 親要素のtop/leftから50％ */
+  left: 50%;
+  transform: translate(-50%,-50%);  /*センター寄せの修正*/
+  width: 100%;
+  text-align: center;
+  z-index: 2; /* 文字を最前面に表示 */
+}
+
+.header h1, .header h2 {
+  z-index: 3; /* 文字自体が最前面に来るように設定 */
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.welcome {
+  margin: 5%;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold 700;
+  text-decoration: underline;
+}
+
+main nav {
+  margin-top: 50px;
+  min-width: 730px;
+}
+
+main nav div {
+  margin-bottom: 50px;
+}
+
+main nav div img {
+  width: 80px;
+}
+
+main nav h2 {
+  font-size: larger;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#lefticon {
+  margin-right: 5%;
+  float: left;
+}
+
+#righticon {
+  margin-left: 5%;
+  float: right;
+}
+
+#lefticon:hover, #righticon:hover {
+  opacity: 0.7;
+}
+
+.class {
+  text-align: right;
+  /* Parent width - class content width - icon width */
+  margin-left: calc(100% - 300px - 100px);
+}
+
+.gallery {
+  text-align: right;
+  /* Parent width - gallery content width - icon width */
+  margin-left: calc(100% - 300px - 100px);
+}
+
+footer {
+  clear: both;
+  padding: 20px;
+  margin-top: 5%;
+  text-align: center;
+  background-color: #f9c4bc;
+}
+
+footer p {
+  font-size: 1.2em;
+}

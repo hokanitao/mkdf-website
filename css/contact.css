@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #fefdf8;
+}
+
+.prinav {
+  background-color: #f9c4bc;
+}
+
+#mklogo {
+  vertical-align: middle;
+  margin: 5px;
+  margin-left: 10px;
+  width: 70px;
+  border: 1px solid black;
+}
+
+#currentpage {
+  border-bottom: 2px solid #54b9b5;
+}
+
+.prinav {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.navcontent{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.prinav div div {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+
+.prinav div div img {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.prinav div div:hover {
+  opacity: 0.7;
+}
+
+.navspacer {
+  display: inline-block;
+  /* Parent width - Logo width - Menu <div> width */
+  width: calc(100% - 100px - 480px);
+}
+
+main {
+  margin: 5% 10%;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.title {
+  margin: 5%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h1 {
+  border-bottom: 2px dashed #f9c4bc;
+  display: inline-block;
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2em;
+}
+
+.text {
+  margin-top: 5px;
+}
+
+form {
+  text-align: left;
+  margin-top: 5%;
+}
+
+label {
+  margin-bottom: 10px;
+  padding: 3px 20px;
+  font-size: 1.1em;
+  background-color: #ec8366;
+  color: #fefdf8;
+  width: fit-content;
+}
+
+em {
+  font-size: 0.6em;
+  padding-left: 10px;
+}
+
+.grid {
+  display: grid;
+  }
+
+.name-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.class {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px 1fr;
+  margin-bottom: 50px;
+  gap: 10px;
+  vertical-align: bottom;
+}
+
+.class label {
+  grid-column: 1/ 5;
+  margin-bottom: 10px;
+}
+
+.class input {
+  margin-left: 30px;
+}
+
+.message {
+  display: grid;
+  grid-template-rows: 1fr 3fr; 
+  margin-bottom: 50px;
+}
+
+input, textarea {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid #ec8366;
+  resize: none;
+}
+
+.submit {
+  text-align: right;
+}
+
+.submit button {
+  padding: 10px 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: #54b9b5;
+  color: #fefdf8;
+  border: 0;
+  border-radius: 5px;
+}
+
+.submit button:hover {
+  opacity: 0.7;
+}
+
+.submit button:active {
+  color: #ec8366;
+}
+
+.submit button img {
+  width: 20px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 5%;
+  text-align: center;
+  background-color: #f9c4bc;
+}
+
+footer p {
+  font-size: 1.2em;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ribeye+Marrow&display=swap" rel="stylesheet"> 
+  <title>MKDF Contact</title>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="primary" class="prinav">
+      <a href="../index.html">
+        <img src="../assets/logo/mk_logo.jpg" id="mklogo">
+      </a>
+      <span class="navspacer"></span>
+      <div class="navcontent">
+        <div>
+          <a href="../index.html"><img src="../assets/icon/home.svg">HOME</a>
+        </div>
+        <div>
+          <a href="./about.html"><img src="../assets/icon/about.svg">ABOUT</a>
+        </div>
+        <div>
+          <a href="./class.html"><img src="../assets/icon/classes.svg">CLASSES</a>
+        </div>
+        <div>
+          <a href="./update.html"><img src="../assets/icon/update.svg">UPDATE</a>
+        </div>
+        <div>
+          <a href="./gallery.html"><img src="../assets/icon/gallery.svg">GALLERY</a>      
+        </div>
+        <div id="currentpage">
+          <a href="#"><img src="../assets/icon/contact.svg">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="title">
+      <h1>Contact Us</h1>
+      <p class="text">Say Hi! We&apos;re always happy to connect.</p>
+    </div>
+    <form action="" method="post">
+      <div class="name-email">
+        <div class="grid">
+          <label for="name">Name<em>*required</em></label>
+          <input id="name" type="name" name="name" placeholder="Name" required>
+        </div>
+        <div class="grid">
+          <label for="email">Email<em>*required</em></label>
+          <input id="email" type="email" name="email" placeholder="mkdf@email.com" required>
+        </div>
+      </div>
+      <div class="class">
+        <label for="class">Let us know which class you&apos;re curious about!</label>
+        <input id="class" type="checkbox" name="ohka" value="ohka">Ohka class<br>
+        <input id="class" type="checkbox" name="ten" value="ten">TEN class<br>
+        <input id="class" type="checkbox" name="jr" value="jr">Jr. class<br>
+        <input id="class" type="checkbox" name="kids" value="kids">Kid's class<br>
+        <input id="class" type="checkbox" name="step1" value="step1">STEP1 class<br>
+      </div>
+      <div class="message">
+        <label for="msg">Message<em>*required</em></label>
+        <textarea id="msg" name="name" placeholder="Your message is the first step to the dance floor!" required></textarea>
+      </div>
+      <div class="submit">
+        <button type="submit">Let&apos;s Dance! <img src="../assets/icon/send.svg"></button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      &copy; MK Dance Factory 2025</a>
+    </p>
+  </footer>
+</body>
+</html>
