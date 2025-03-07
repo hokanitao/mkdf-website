@@ -20,6 +20,7 @@ body {
   background-color: #fefdf8;
 }
 
+/* navbar */
 .prinav {
   background-color: var(--header-footer-color);
 }
@@ -71,6 +72,7 @@ body {
   width: calc(100% - 100px - 480px);
 }
 
+/* main */
 main {
   padding: 5% 5%;
   text-align: center;
@@ -87,16 +89,32 @@ h1 {
 }
 
 .text {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   line-height: 2;
   margin: 0 0 1em 0;
 }
 
-em {
-  font-size: 1.4em;
+p::first-letter {
+  font-size: 2rem;
 }
 
+.pseudo::before {
+  content: open-quote;
+}
 
+.pseudo::after {
+  content: close-quote;
+}
+
+.pseudo {
+  font-size: 1.6rem;
+}
+
+em {
+  font-size: 2rem;
+}
+
+/* footer */
 footer {
   padding: 20px;
   text-align: center;
