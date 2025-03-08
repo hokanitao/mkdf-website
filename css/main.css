@@ -60,6 +60,9 @@
 
 .prinav li:hover {
   opacity: 0.7;
+  transition: opacity 1s linear;
+  transform: translateY(-5px);
+  transition: transform 0.3s linear;
 }
 
 .navspacer {
@@ -79,7 +82,7 @@
 
 .headphoto img {
   width: 100%;
-  opacity: 0.3; /* 画像の透明度を調整 */
+  opacity: 0.3;
 }
 
 .header {
@@ -97,7 +100,7 @@
 }
 
 /* main */
-main {
+.mainnav {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -141,6 +144,8 @@ main nav h2 {
 
 #lefticon:hover, #righticon:hover {
   opacity: 0.7;
+  transition: opacity 1s linear;
+  transform: translateY(-5px);
 }
 
 .class {

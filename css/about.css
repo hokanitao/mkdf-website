@@ -64,6 +64,9 @@ body {
 
 .prinav li:hover {
   opacity: 0.7;
+  transition: opacity 1s linear;
+  transform: translateY(-5px);
+  transition: transform 0.3s linear;
 }
 
 .navspacer {
