@@ -81,8 +81,7 @@ main {
   text-align: center;
 }
 
-/* about */
-h1 {
+h1, h2 {
   margin-bottom: 3%;
   font-family: "Ribeye Marrow", serif;
   font-weight: 400;
@@ -119,8 +118,60 @@ em {
 }
 
 /* FAQ */
+.each-q {
+  margin: 0 5%;
+  padding: 1.5rem 0;
+  /* border-bottom:1px solid var(--accent-color-orange); */
+}
 
+.faq {
+  padding-top: 5rem;
+}
 
+.checkbox {
+  display: none;
+}
+
+.questions {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 0;
+  border-bottom:1px solid var(--accent-color-orange);
+  width: 100%;
+  display: block;
+}
+
+.questions:hover {
+  background-color: var(--header-footer-color);
+}
+
+.questions::after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 1rem;
+  margin-left: 1rem;
+  float: right;
+}
+
+.answers {
+  padding: 1rem;
+  display: none;
+  transition: 0.5s;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.checkbox:checked ~ .answers {
+  display: block;
+  transition: 0.5s;
+}
+
+.checkbox:checked ~ .questions {
+  background-color: var(--header-footer-color);
+}
+
+.checkbox:checked ~ .questions::after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 
 /* footer */
 footer {
