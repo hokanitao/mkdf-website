@@ -95,6 +95,14 @@
   z-index: 2; /* 文字を最前面に表示 */
 }
 
+.header h1 {
+  font-size: 5rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+}
+
 .header h1, .header h2 {
   z-index: 3; /* 文字自体が最前面に来るように設定 */
 }
@@ -114,8 +122,8 @@
 }
 
 main nav {
-  margin-top: 50px;
-  min-width: 730px;
+  /* margin-top: 50px; */
+  /* min-width: 730px; */
 }
 
 main nav div {
@@ -171,4 +179,18 @@ footer {
 
 footer p {
   font-size: 1.2em;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  
+  .header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+
 }
