@@ -149,5 +149,18 @@ footer p {
 }
 
 @media (max-width: 767px) {
-
+  main {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  table {
+    font-size: 1rem;
+    border-spacing: 5px 10px;
+  }
 }

@@ -208,5 +208,22 @@ footer p {
 }
 
 @media (max-width: 767px) {
-
+  h1, h2 {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .about p::first-letter {
+    font-size: 1.8rem;
+  }
+  .pseudo {
+    font-size: 1.4rem;
+  }
+  em {
+    font-size: 1.8rem;
+  }
+  .questions, .answers {
+    font-size: 1rem;
+  }
 }
