@@ -86,7 +86,7 @@ h1, h2 {
   font-family: "Ribeye Marrow", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
+  font-size: 3rem;
   border-bottom: 2px dashed var(--header-footer-color);
   display: inline-block;
 }
@@ -120,7 +120,7 @@ em {
 /* FAQ */
 .each-q {
   margin: 0 5%;
-  padding: 1.5rem 0;
+  padding: 1% 0;
   /* border-bottom:1px solid var(--accent-color-orange); */
 }
 
@@ -185,7 +185,26 @@ footer p {
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
-
+  h1, h2 {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin: 0;
+  }
+  .about p::first-letter {
+    font-size: 1.8rem;
+  }
+  .pseudo {
+    font-size: 1.4rem;
+  }
+  em {
+    font-size: 1.6rem;
+  }
+  .questions, .answers {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 767px) {
