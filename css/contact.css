@@ -239,7 +239,7 @@ footer p {
     font-size: 1.4rem;
   }
   .text, label, .submit {
-    font-size: 0,7rem;
+    font-size: 0.7rem;
   }
   .name-email {
     grid-template-columns: 1fr;
@@ -256,6 +256,17 @@ footer p {
     margin-bottom: 25px;
   }
   /* navbar */
+  main nav div {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  main nav div img {
+    width: 50px;
+  }
+  main nav p {
+    display: none;
+  }
   .navcontent {
     display: none;
   }

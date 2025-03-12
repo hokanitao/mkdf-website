@@ -122,6 +122,11 @@ h2 {
   margin-bottom: 50px;
 }
 
+.pic picture img {
+  height: 300px;
+  object-fit: cover; /* Crops the image to fill the box */
+}
+
 .pic img {
   align-self: auto;
 }
@@ -136,7 +141,6 @@ h2 {
 .backtotop img {
   width: 4rem;
 }
-
 
 /* footer */
 footer {
@@ -171,6 +175,9 @@ footer p {
     gap: 15px;
     height: 200px;
   }
+  .pic picture img {
+    height: 200px;
+  }
 }
 /* Mobile */
 @media (max-width: 767px) {
@@ -190,7 +197,7 @@ footer p {
   .navcontent {
     display: none;
   }
-  .menu-1 {
+  .menu-right .menu-1 {
     display: block;
   }
   #menu:checked ~ .menu-1 {
@@ -207,6 +214,9 @@ footer p {
   }
   .pic {
     gap: 10px;
+    height: 150px;
+  }
+  .pic picture img {
     height: 150px;
   }
 }
