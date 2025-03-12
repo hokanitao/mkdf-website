@@ -218,16 +218,16 @@ footer p {
     width: 50px;
   }
   h1, h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .text {
     font-size: 1rem;
   }
-  .about p::first-letter {
-    font-size: 1.8rem;
-  }
   .pseudo {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+  .about p::first-letter {
+    font-size: 1.5rem;
   }
   em {
     font-size: 1.8rem;
