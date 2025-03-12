@@ -78,9 +78,19 @@
   width: 100%;
 }
 
+@keyframes imgOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
 .headphoto img {
   width: 100%;
   opacity: 0.3;
+  animation: imgOpacity 1s;
 }
 
 .header {
@@ -93,12 +103,28 @@
   z-index: 2;
 }
 
+@keyframes movingLetters {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 h1 {
   font-size: 5rem;
+  transform-origin: center;
+  animation: movingLetters 1s ease-out forwards;
 }
 
 .header h2 {
   font-size: 2rem;
+  transform-origin: center;
+  animation: movingLetters 1s ease-out forwards;
+
 }
 
 .header h1, .header h2 {
