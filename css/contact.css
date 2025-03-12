@@ -20,6 +20,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
+/* navigation bar */
 .prinav {
   background-color: var(--header-footer-color);
 }
@@ -37,10 +38,9 @@ body {
 }
 
 .prinav {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
 }
 
 .navcontent{
@@ -63,17 +63,17 @@ body {
 
 .prinav li:hover {
   opacity: 0.7;
-  transition: opacity 1s linear;
   transform: translateY(-5px);
   transition: transform 0.3s linear;
 }
 
-.navspacer {
-  display: inline-block;
-  /* Parent width - Logo width - Menu <div> width */
-  width: calc(100% - 100px - 480px);
+#menu, .menu-1, .menu-2{
+  display: none;
+  width: 20px;
+  vertical-align: bottom;
 }
 
+/* main */
 main {
   margin: 5% 10%;
   font-size: 1.4em;
@@ -104,10 +104,10 @@ form {
   margin-top: 5%;
 }
 
-label {
+.class label, .name-email label, .message label {
   margin-bottom: 10px;
   padding: 3px 20px;
-  font-size: 1.1em;
+  font-size: 1rem;
   background-color: var(--accent-color-orange);
   color: #fefdf8;
   width: fit-content;
@@ -199,6 +199,12 @@ footer p {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1280px) {
+  #mklogo {
+    width: 60px;
+  }
+  .navcontent{
+    margin-top: 10px;
+  }
   main {
     font-size: 1.2rem;
   }
@@ -209,7 +215,7 @@ footer p {
     font-size: 1.2rem;
   }
   label {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .submit {
     font-size: 1rem;
@@ -220,6 +226,12 @@ footer p {
 }
 /* Mobile */
 @media (max-width: 767px) {
+  #mklogo {
+    width: 50px;
+  }
+  main {
+    font-size: 1rem;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -227,21 +239,69 @@ footer p {
     font-size: 1.4rem;
   }
   .text, label, .submit {
-    font-size: 1rem;
+    font-size: 0,7rem;
   }
   .name-email {
     grid-template-columns: 1fr;
     gap: 20px;
     margin-bottom: 30px;
   }
-  #class {
-    margin-left: 0;
-  }
   .class {
-    grid-template-columns: 15px 1fr;
     margin-bottom: 30px;
   }
   input, textarea {
     padding: 10px 20px;
   }
+  .message {
+    margin-bottom: 25px;
+  }
+  /* navbar */
+  main nav div {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  main nav div img {
+    width: 50px;
+  }
+  main nav p {
+    display: none;
+  }
+  .navcontent {
+    display: none;
+  }
+  .menu-1 {
+    display: block;
+  }
+  #menu:checked ~ .menu-1 {
+    display: none;
+  }
+  #menu:checked ~ .menu-2 {
+    display: inline-block;
+  }
+  .menu-right {
+    padding-top: 17px;
+  }
+}
+
+#menu:checked ~ .menu-2 {
+  position: relative;
+  z-index: 50;
+  width: 20px;
+  
+}
+#menu:checked ~ .navcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: var(--main-bg-color);
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 80vh;
+  width: 30%;
+  margin: 0;
+  padding: 10% 5%;
+  gap: 1.5rem;
 }

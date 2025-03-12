@@ -59,7 +59,6 @@
 
 .prinav li:hover {
   opacity: 0.7;
-  transition: opacity 1s linear;
   transform: translateY(-5px);
   transition: transform 0.3s linear;
 }
@@ -86,12 +85,12 @@
 
 .header {
   position: absolute;
-  top: 50%; /* 親要素のtop/leftから50％ */
+  top: 50%; /* top/left 50％ */
   left: 50%;
-  transform: translate(-50%,-50%);  /*センター寄せの修正*/
+  transform: translate(-50%,-50%);  /*center*/
   width: 100%;
   text-align: center;
-  z-index: 2; /* 文字を最前面に表示 */
+  z-index: 2;
 }
 
 h1 {
@@ -204,6 +203,7 @@ footer p {
   .welcome p {
     font-size: 1.2rem;
   }
+  /* navbar */
   main nav div {
     margin: 0;
     display: flex;

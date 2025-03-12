@@ -20,6 +20,7 @@ body {
   font-style: normal;
 }
 
+/* navigation bar */
 .prinav {
   background-color: var(--header-footer-color);
 }
@@ -37,10 +38,9 @@ body {
 }
 
 .prinav {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
 }
 
 .navcontent{
@@ -63,17 +63,17 @@ body {
 
 .prinav li:hover {
   opacity: 0.7;
-  transition: opacity 1s linear;
   transform: translateY(-5px);
   transition: transform 0.3s linear;
 }
 
-.navspacer {
-  display: inline-block;
-  /* Parent width - Logo width - Menu <div> width */
-  width: calc(100% - 100px - 480px);
+#menu, .menu-1, .menu-2{
+  display: none;
+  width: 20px;
+  vertical-align: bottom;
 }
 
+/* main table*/
 .title {
   margin: 5%;
   margin-bottom: 15px;
@@ -124,6 +124,7 @@ table tbody tr:nth-child(odd) {
   background-color: var(--accent-color-green);
 }
 
+/* footer */
 footer {
   padding: 20px;
   margin-top: 5%;
@@ -137,6 +138,12 @@ footer p {
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+  #mklogo {
+    width: 60px;
+  }
+  .navcontent{
+    margin-top: 10px;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -149,6 +156,9 @@ footer p {
 }
 
 @media (max-width: 767px) {
+  #mklogo {
+    width: 50px;
+  }
   main {
     margin-left: 3%;
     margin-right: 3%;
@@ -163,4 +173,53 @@ footer p {
     font-size: 1rem;
     border-spacing: 5px 10px;
   }
+  /* navbar */
+  main nav div {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  main nav div img {
+    width: 50px;
+  }
+  main nav p {
+    display: none;
+  }
+  .navcontent {
+    display: none;
+  }
+  .menu-1 {
+    display: block;
+  }
+  #menu:checked ~ .menu-1 {
+    display: none;
+  }
+  #menu:checked ~ .menu-2 {
+    display: inline-block;
+  }
+  .menu-right {
+    padding-top: 17px;
+  }
+}
+
+#menu:checked ~ .menu-2 {
+  position: relative;
+  z-index: 50;
+  width: 20px;
+  
+}
+#menu:checked ~ .navcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: var(--main-bg-color);
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 80vh;
+  width: 30%;
+  margin: 0;
+  padding: 10% 5%;
+  gap: 1.5rem;
 }
