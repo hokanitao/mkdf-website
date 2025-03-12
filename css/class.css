@@ -174,17 +174,6 @@ footer p {
     border-spacing: 5px 10px;
   }
   /* navbar */
-  main nav div {
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  main nav div img {
-    width: 50px;
-  }
-  main nav p {
-    display: none;
-  }
   .navcontent {
     display: none;
   }

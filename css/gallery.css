@@ -67,7 +67,7 @@ body {
   transition: transform 0.3s linear;
 }
 
-#menu, .menu-1, .menu-2{
+#menu, .menu-right>label{
   display: none;
   width: 20px;
   vertical-align: bottom;
@@ -187,17 +187,6 @@ footer p {
     font-size: 1rem;
   }
   /* navbar */
-  main nav div {
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  main nav div img {
-    width: 50px;
-  }
-  main nav p {
-    display: none;
-  }
   .navcontent {
     display: none;
   }
